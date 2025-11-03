@@ -4,6 +4,13 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  VITE_WORKER_URL = "https://pdf-packet-generator.maxterra-pdf-builder.workers.dev"
+
+[context.production.environment]
+  VITE_WORKER_URL = "https://pdf-packet-generator.maxterra-pdf-builder.workers.dev"
+
+[context.deploy-preview.environment]
+  VITE_WORKER_URL = "https://pdf-packet-generator.maxterra-pdf-builder.workers.dev"
 
 [[redirects]]
   from = "/*"
